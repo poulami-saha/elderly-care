@@ -106,11 +106,11 @@ const Features = () => {
                   id="link3"
                 >
                   <p>
-                    Elderly Care's algorithm matches the various skills of our Caregiver with
-                    your needs.
+                    Elderly Care's algorithm matches the various skills of our
+                    Caregiver with your needs.
                     <br />
-                    <br /> This way we guarantee that you only receive suggestions
-                    that perfectly match your requirements.
+                    <br /> This way we guarantee that you only receive
+                    suggestions that perfectly match your requirements.
                   </p>
                 </div>
               </div>
