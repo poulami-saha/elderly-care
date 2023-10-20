@@ -5,7 +5,7 @@ import free from "../assets/homepage.jpg";
 const Assistance = () => {
   return (
     <>
-      <div className="flex flex-col max-w-[1280px] mx-auto px-6 py-8 space-y-12 font-mono">
+      <div className="flex flex-col max-w-[1280px] mx-auto px-6 py-8 space-y-12 font-serif">
         <h1 className="text-2xl font-bold text-center font-serif">
           Services Offered
         </h1>
