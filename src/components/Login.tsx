@@ -40,7 +40,7 @@ const Login = () => {
         loginState.password
       );
       localStorage.setItem("userId", userCredential.user.uid);
-      await navigate("/details");
+      await navigate("/assistance");
     } catch (err) {
       setFailedSignIn(true);
     }
@@ -50,9 +50,9 @@ const Login = () => {
     if (loading) {
       return;
     }
+    
     if (!!user) {
       localStorage.setItem("userId", user.uid);
-      //navigate("/details");
     }
     if (error) {
       setFailedSignIn(true);

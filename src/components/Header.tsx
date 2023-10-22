@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <header className="mx-auto p-2 flex justify-between bg-green-200 h-16  items-center max-w-[1240px] md:my-4 sm:rounded-b-xl md:rounded-xl shadow-md shadow-green-500/50">
       <div className="flex space-x-3 items-center ml-2 md:ml-12">
-        <img src={logo} />
+        <img src={logo} alt="logo"/>
         <h1 className="font-bold text-2xl">Elderly Care</h1>
       </div>
       <nav>
@@ -50,14 +50,22 @@ const Header = () => {
           <li>
             <NavLink to="/cost">Cost</NavLink>
           </li>
-          <li>
-            <NavLink to="/startNow">Request Now</NavLink>
-          </li>
+          {!!userId && (
+            <li>
+              <NavLink to="/requests">Requests</NavLink>
+            </li>
+          )}
           {userId && (
             <li>
               <NavLink to="/" onClick={handleLogout}>
                 Sign Out
               </NavLink>
+            </li>
+          )}
+
+          {!userId && (
+            <li>
+              <NavLink to="/signIn">Sign In</NavLink>
             </li>
           )}
         </ul>
@@ -78,7 +86,7 @@ const Header = () => {
         }
       >
         <div className="flex space-x-3 items-center ml-2 mt-5 md:ml-12 md:mt-0">
-          <img src={logo} />
+          <img src={logo} alt="logo"/>
           <h1 className="font-bold text-xl">Elderly Care</h1>
         </div>
         <nav className="sm: block md:hidden">
@@ -98,7 +106,7 @@ const Header = () => {
               <NavLink to="/cost">Cost</NavLink>
             </li>
             <li className="border-b border-green-700 pb-4">
-              <NavLink to="/startNow">Request Now</NavLink>
+              <NavLink to="/requests">Requests</NavLink>
             </li>
             {userId && (
               <li>
