@@ -56,7 +56,7 @@ const CreateAccount = () => {
           Failed to create an account. Please try after sometime.
         </p>
       )}
-      <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+      <form className="mt-8 space-y-6" onSubmit={handleSubmit} autoComplete="off">
         <Input
           size="lg"
           label="Email Address"
@@ -84,7 +84,7 @@ const CreateAccount = () => {
           label="SignUp as a Caregiver"
           crossOrigin={undefined}
           checked={caregiver}
-          onClick={() => setCaregiver(!caregiver)}
+          onChange={() => setCaregiver(!caregiver)}
           className="font-sans"
         />
         <button

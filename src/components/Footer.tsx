@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="mx-auto py-8 px-8 grid lg:grid-cols-3 gap-8 bg-green-200 max-w-[1280px] rounded-xl">
       <div>
       <div className="flex space-x-3 items-center ml-2 md:ml-8">
-        <img src={logo} />
+        <img src={logo} alt="logo"/>
         <h1 className="font-bold text-xl">Elderly Care</h1>
       </div>
         <p className="py-4">

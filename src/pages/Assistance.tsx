@@ -13,14 +13,15 @@ const Assistance = () => {
           <img
             src={hygiene}
             className="h-[300px] hidden md:block md:w-1/2 border rounded-2xl"
+            alt="hygiene"
           />
           <div className="w-auto md:w-1/2 border border-green-200 rounded-2xl p-8 h-[300px]">
             <p className="text-xl font-serif font-bold">Personal hygiene</p>
-            <p className="my-4 font-light">
+            <p className="my-4">
               A large part of the care services is help with personal hygiene.
               These can be very different depending on your needs.
             </p>
-            <ul className="list-disc px-4 mb-4 font-light">
+            <ul className="list-disc px-4 mb-4">
               <li>Bathing & showering</li>
               <li>Going to the toilet</li>
               <li>Combing hair & shaving</li>
@@ -31,11 +32,11 @@ const Assistance = () => {
         <div className="flex justify-between space-x-24">
           <div className="w-auto md:w-1/2 border border-green-200 rounded-2xl p-8 h-[300px]">
             <h1 className="text-xl font-serif font-bold">Food & Nutrition</h1>
-            <p className="my-4 font-light">
+            <p className="my-4">
               A large part of the care services is also to assist you in
               preparing meals and adapt to the diet.
             </p>
-            <ul className="list-disc px-4 mb-4" font-light>
+            <ul className="list-disc px-4 mb-4">
               <li>Cooking together</li>
               <li>Support while eating</li>
               <li>Maintaining diet</li>
@@ -45,20 +46,22 @@ const Assistance = () => {
           <img
             src={food}
             className="h-[300px] hidden md:block md:w-1/2 border rounded-xl"
+            alt="food"
           />
         </div>
         <div className="flex flex-col md:flex-row justify-between space-y-4 md:space-y-0 md:space-x-24">
           <img
             src={mobility}
             className="h-[300px] hidden md:block md:w-1/2 border rounded-2xl"
+            alt="mobility"
           />
           <div className="w-auto md:w-1/2 border border-green-200 rounded-2xl p-8 h-[300px]">
             <p className="text-xl font-serif font-bold">Domestic Support</p>
-            <p className="my-4 font-light">
+            <p className="my-4">
               A large part of the care services is help with daily chores.
               These can vary different depending on your needs.
             </p>
-            <ul className="list-disc px-4 mb-4 font-light">
+            <ul className="list-disc px-4 mb-4">
             <li>Making beds</li>
               <li>Washing & Ironing</li>
               <li>Regular cleaning</li>
@@ -68,11 +71,11 @@ const Assistance = () => {
         <div className="flex justify-between space-x-24">
           <div className="w-auto md:w-1/2 border border-green-200 rounded-2xl p-8 h-[300px]">
             <h1 className="text-xl font-serif font-bold">Leisure</h1>
-            <p className="my-4 font-light">
+            <p className="my-4">
               A large part of the care services is to give you company in the
               way you like.
             </p>
-            <ul className="list-disc px-4 mb-4 font-light">
+            <ul className="list-disc px-4 mb-4">
               <li>Playing indoor games together</li>
               <li>Going for shopping</li>
               <li>Evening walk together</li>
@@ -83,6 +86,7 @@ const Assistance = () => {
           <img
             src={free}
             className="h-[300px] hidden md:block md:w-1/2 border rounded-xl"
+            alt="free"
           />
         </div>
       </div>
